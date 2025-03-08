@@ -25,8 +25,6 @@ def main():
     logger.log("creating model and diffusion...")
     logger.log(args_to_dict(args, model_and_diffusion_defaults().keys()))
 
-    return -1
-
 
     model, diffusion = create_model_and_diffusion(
         **args_to_dict(args, model_and_diffusion_defaults().keys())
