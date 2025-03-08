@@ -23,8 +23,7 @@ def main():
     logger.configure()
 
     logger.log("creating model and diffusion...")
-    logger.log(args_to_dict(args, model_and_diffusion_defaults().keys()))
-    logger.log(args)
+    logger.log("COPY THIS:", args_to_dict(args, model_and_diffusion_defaults().keys()))
 
 
     model, diffusion = create_model_and_diffusion(
