@@ -476,7 +476,7 @@ class GaussianDiffusion:
                 yield out
                 img = out["sample"]
 
-    def p_sample_loop(
+    def p_sample_loop_T(
         self,
         model,
         shape,
